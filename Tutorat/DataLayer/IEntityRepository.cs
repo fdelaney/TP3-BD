@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace DataLayer
 {
-    class IEntityRepository
+    public interface IEntityRepository<T> where T : Entity
     {
+        IQueryable<T> GetAll();
+        T GetByID(int id);
+        void Delete(T entity);
+        void Add(T entity);
+        void Update(T entity);
     }
 }
