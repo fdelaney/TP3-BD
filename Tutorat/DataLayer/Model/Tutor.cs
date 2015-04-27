@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace DataLayer.Model
 {
-    class Tutor
+    public class Tutor : Entity
     {
+
     }
 }
