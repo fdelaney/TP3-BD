@@ -25,17 +25,19 @@ namespace DataLayer.EfEntityFramework
 
        public  void Delete(T entity)
         {
-            throw new System.NotImplementedException();
+           _context.Entry<T>(entity).State = System.Data.Entity.EntityState.Deleted;
+           _context.SaveChanges();
         }
 
         public void Add(T entity)
         {
-            
+            _context.Set<T>().Add(entity);
+            _context.SaveChanges();
         }
 
         public void Update(T entity)
         {
-            throw new System.NotImplementedException();
+           
         }
     }
 }
