@@ -18,27 +18,22 @@ namespace DataLayer.EfEntityFramework
             return _context.Set<T>().AsQueryable();
         }
 
-        IQueryable<T> IEntityRepository<T>.GetAll()
+        public T GetByID(int id)
         {
             throw new System.NotImplementedException();
         }
 
-        T IEntityRepository<T>.GetByID(int id)
+       public  void Delete(T entity)
         {
             throw new System.NotImplementedException();
         }
 
-        void IEntityRepository<T>.Delete(T entity)
+        public void Add(T entity)
         {
-            throw new System.NotImplementedException();
+            
         }
 
-        void IEntityRepository<T>.Add(T entity)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        void IEntityRepository<T>.Update(T entity)
+        public void Update(T entity)
         {
             throw new System.NotImplementedException();
         }

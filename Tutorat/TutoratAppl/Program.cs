@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DataLayer.EfEntityFramework;
 
 namespace TutoratAppl
 {
@@ -10,6 +11,8 @@ namespace TutoratAppl
     {
         static void Main(string[] args)
         {
+            EfDataBaseHelper _dbHelper = new EfDataBaseHelper();
+            _dbHelper.seedTable();
         }
     }
 }
