@@ -1,2 +1,14 @@
 c:\users\francis\documents\visual studio 2013\Projects\Tutorat\DataLayer\bin\Debug\DataLayer.exe.config
 C:\Users\Francis\Documents\Visual Studio 2013\Projects\TP3-BD\Tutorat\DataLayer\bin\Debug\DataLayer.exe.config
+C:\Users\Francis\Documents\Visual Studio 2013\Projects\TP3-BD\Tutorat\DataLayer\bin\Debug\DataLayer.exe
+C:\Users\Francis\Documents\Visual Studio 2013\Projects\TP3-BD\Tutorat\DataLayer\bin\Debug\DataLayer.pdb
+C:\Users\Francis\Documents\Visual Studio 2013\Projects\TP3-BD\Tutorat\DataLayer\bin\Debug\EntityFramework.dll
+C:\Users\Francis\Documents\Visual Studio 2013\Projects\TP3-BD\Tutorat\DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Francis\Documents\Visual Studio 2013\Projects\TP3-BD\Tutorat\DataLayer\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\Users\Francis\Documents\Visual Studio 2013\Projects\TP3-BD\Tutorat\DataLayer\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Francis\Documents\Visual Studio 2013\Projects\TP3-BD\Tutorat\DataLayer\bin\Debug\EntityFramework.xml
+C:\Users\Francis\Documents\Visual Studio 2013\Projects\TP3-BD\Tutorat\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Francis\Documents\Visual Studio 2013\Projects\TP3-BD\Tutorat\DataLayer\bin\Debug\EntityFramework.SqlServerCompact.xml
+C:\Users\Francis\Documents\Visual Studio 2013\Projects\TP3-BD\Tutorat\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
+C:\Users\Francis\Documents\Visual Studio 2013\Projects\TP3-BD\Tutorat\DataLayer\obj\Debug\DataLayer.exe
+C:\Users\Francis\Documents\Visual Studio 2013\Projects\TP3-BD\Tutorat\DataLayer\obj\Debug\DataLayer.pdb

@@ -13,6 +13,8 @@ namespace TutoratAppl
         {
             EfDataBaseHelper _dbHelper = new EfDataBaseHelper();
             _dbHelper.seedTable();
+
+            
         }
     }
 }

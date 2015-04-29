@@ -8,3 +8,5 @@ C:\Users\Francis\Documents\Visual Studio 2013\Projects\TP3-BD\Tutorat\TutoratApp
 C:\Users\Francis\Documents\Visual Studio 2013\Projects\TP3-BD\Tutorat\TutoratAppl\obj\Debug\TutoratAppl.csprojResolveAssemblyReference.cache
 C:\Users\Francis\Documents\Visual Studio 2013\Projects\TP3-BD\Tutorat\TutoratAppl\obj\Debug\TutoratAppl.exe
 C:\Users\Francis\Documents\Visual Studio 2013\Projects\TP3-BD\Tutorat\TutoratAppl\obj\Debug\TutoratAppl.pdb
+C:\Users\Francis\Documents\Visual Studio 2013\Projects\TP3-BD\Tutorat\TutoratAppl\bin\Debug\DataLayer.exe
+C:\Users\Francis\Documents\Visual Studio 2013\Projects\TP3-BD\Tutorat\TutoratAppl\bin\Debug\DataLayer.pdb
