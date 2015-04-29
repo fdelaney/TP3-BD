@@ -1,0 +1,10 @@
+C:\Users\Francis\Documents\Visual Studio 2013\Projects\TP3-BD\Tutorat\TutoratAppl\bin\Debug\TutoratAppl.exe.config
+C:\Users\Francis\Documents\Visual Studio 2013\Projects\TP3-BD\Tutorat\TutoratAppl\bin\Debug\TutoratAppl.exe
+C:\Users\Francis\Documents\Visual Studio 2013\Projects\TP3-BD\Tutorat\TutoratAppl\bin\Debug\TutoratAppl.pdb
+C:\Users\Francis\Documents\Visual Studio 2013\Projects\TP3-BD\Tutorat\TutoratAppl\bin\Debug\EntityFramework.dll
+C:\Users\Francis\Documents\Visual Studio 2013\Projects\TP3-BD\Tutorat\TutoratAppl\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Francis\Documents\Visual Studio 2013\Projects\TP3-BD\Tutorat\TutoratAppl\bin\Debug\EntityFramework.xml
+C:\Users\Francis\Documents\Visual Studio 2013\Projects\TP3-BD\Tutorat\TutoratAppl\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Francis\Documents\Visual Studio 2013\Projects\TP3-BD\Tutorat\TutoratAppl\obj\Debug\TutoratAppl.csprojResolveAssemblyReference.cache
+C:\Users\Francis\Documents\Visual Studio 2013\Projects\TP3-BD\Tutorat\TutoratAppl\obj\Debug\TutoratAppl.exe
+C:\Users\Francis\Documents\Visual Studio 2013\Projects\TP3-BD\Tutorat\TutoratAppl\obj\Debug\TutoratAppl.pdb
