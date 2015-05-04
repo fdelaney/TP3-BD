@@ -18,6 +18,7 @@ namespace TutoratAppl.View
             foreach (var h in _helpedList)
             {
                Console.WriteLine(h.ToString());
+               
             }
         }
     }

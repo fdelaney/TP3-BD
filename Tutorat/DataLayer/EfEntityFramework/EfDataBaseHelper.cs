@@ -26,12 +26,12 @@ namespace DataLayer.EfEntityFramework
 
 
             Tutor t1 = new Tutor() {EmailAddress = "bgary2@hotmail.com", LastName = "Bilodeau", FirstName = "Gary"};
-            Tutor t2 = new Tutor() { EmailAddress = "bgary2@hotmail.com", LastName = "Gagnon", FirstName = "Samuel" };
-            Tutor t3 = new Tutor() { EmailAddress = "bgary2@hotmail.com", LastName = "Gingras", FirstName = "Simon" };
-            Tutor t4 = new Tutor() { EmailAddress = "bgary2@hotmail.com", LastName = "Roy", FirstName = "Éric" };
-            Tutor t5 = new Tutor() { EmailAddress = "bgary2@hotmail.com", LastName = "Veilleux", FirstName = "Caroline" };
-            Tutor t6 = new Tutor() { EmailAddress = "bgary2@hotmail.com", LastName = "Tremblay", FirstName = "Karine" };
-            Tutor t7 = new Tutor() { EmailAddress = "bgary2@hotmail.com", LastName = "Vézina", FirstName = "Louis" };
+            Tutor t2 = new Tutor() { EmailAddress = "samPP92@hotmail.com", LastName = "Gagnon", FirstName = "Samuel" };
+            Tutor t3 = new Tutor() { EmailAddress = "ptitguy22@bell.net", LastName = "Gingras", FirstName = "Simon" };
+            Tutor t4 = new Tutor() { EmailAddress = "eroy231@videotron.ca", LastName = "Roy", FirstName = "Éric" };
+            Tutor t5 = new Tutor() { EmailAddress = "caro.koko@hotmail.com", LastName = "Veilleux", FirstName = "Caroline" };
+            Tutor t6 = new Tutor() { EmailAddress = "kar.tremblay@gmail.com", LastName = "Tremblay", FirstName = "Karine" };
+            Tutor t7 = new Tutor() { EmailAddress = "vl410Bd@gmail.com", LastName = "Vézina", FirstName = "Louis" };
 
             _tutorRepository.Add(t1);
             _tutorRepository.Add(t2);
