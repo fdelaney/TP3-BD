@@ -9,6 +9,15 @@ namespace DataLayer.EfEntityFramework
         private EfEntityRepository<TutoringSession> _tutoringSessionRepository;
         private EfEntityRepository<HelpedStudent> _helpedStudentRepository;
 
+
+        private EfDataBaseHelper()
+        {
+            _tutorRepository = new EfEntityRepository<Tutor>();
+            _tutoringSessionRepository = new EfEntityRepository<TutoringSession>();
+            _helpedStudentRepository = new EfEntityRepository<HelpedStudent>();
+              
+        }
+
         public void SeedTable()
         {
             _tutoringSessionRepository.DeleteAll();
@@ -59,23 +68,42 @@ namespace DataLayer.EfEntityFramework
 
 
             TutoringSession TS1 = new TutoringSession() { DateTimeSession = new DateTime(2015, 03, 16, 13, 0, 0), HelpedId = HS5.Id, LengthSession = 2, TutorId = t5.Id };
-            TutoringSession TS2 = new TutoringSession() { DateTimeSession = new DateTime(2015, 03, 16, 13, 0, 0), HelpedId = HS5.Id, LengthSession = 2, TutorId = t5.Id };
-            TutoringSession TS3 = new TutoringSession() { DateTimeSession = new DateTime(2015, 03, 16, 13, 0, 0), HelpedId = HS5.Id, LengthSession = 2, TutorId = t5.Id };
-            TutoringSession TS4 = new TutoringSession() { DateTimeSession = new DateTime(2015, 03, 16, 13, 0, 0), HelpedId = HS5.Id, LengthSession = 2, TutorId = t5.Id };
-            TutoringSession TS5 = new TutoringSession() { DateTimeSession = new DateTime(2015, 03, 16, 13, 0, 0), HelpedId = HS5.Id, LengthSession = 2, TutorId = t5.Id };
-            TutoringSession TS6 = new TutoringSession() { DateTimeSession = new DateTime(2015, 03, 16, 13, 0, 0), HelpedId = HS5.Id, LengthSession = 2, TutorId = t5.Id };
-            TutoringSession TS7 = new TutoringSession() { DateTimeSession = new DateTime(2015, 03, 16, 13, 0, 0), HelpedId = HS5.Id, LengthSession = 2, TutorId = t5.Id };
-            TutoringSession TS8 = new TutoringSession() { DateTimeSession = new DateTime(2015, 03, 16, 13, 0, 0), HelpedId = HS5.Id, LengthSession = 2, TutorId = t5.Id };
-            TutoringSession TS9 = new TutoringSession() { DateTimeSession = new DateTime(2015, 03, 16, 13, 0, 0), HelpedId = HS5.Id, LengthSession = 2, TutorId = t5.Id };
-            TutoringSession TS10 = new TutoringSession() { DateTimeSession = new DateTime(2015, 03, 16, 13, 0, 0), HelpedId = HS5.Id, LengthSession = 2, TutorId = t5.Id };
-            TutoringSession TS11 = new TutoringSession() { DateTimeSession = new DateTime(2015, 03, 16, 13, 0, 0), HelpedId = HS5.Id, LengthSession = 2, TutorId = t5.Id };
-            TutoringSession TS12 = new TutoringSession() { DateTimeSession = new DateTime(2015, 03, 16, 13, 0, 0), HelpedId = HS5.Id, LengthSession = 2, TutorId = t5.Id };
-            TutoringSession TS13 = new TutoringSession() { DateTimeSession = new DateTime(2015, 03, 16, 13, 0, 0), HelpedId = HS5.Id, LengthSession = 2, TutorId = t5.Id };
-            TutoringSession TS14 = new TutoringSession() { DateTimeSession = new DateTime(2015, 03, 16, 13, 0, 0), HelpedId = HS5.Id, LengthSession = 2, TutorId = t5.Id };
-            TutoringSession TS15 = new TutoringSession() { DateTimeSession = new DateTime(2015, 03, 16, 13, 0, 0), HelpedId = HS5.Id, LengthSession = 2, TutorId = t5.Id };
-            TutoringSession TS16 = new TutoringSession() { DateTimeSession = new DateTime(2015, 03, 16, 13, 0, 0), HelpedId = HS5.Id, LengthSession = 2, TutorId = t5.Id };
-            TutoringSession TS17 = new TutoringSession() { DateTimeSession = new DateTime(2015, 03, 16, 13, 0, 0), HelpedId = HS5.Id, LengthSession = 2, TutorId = t5.Id };
-            TutoringSession TS18 = new TutoringSession() { DateTimeSession = new DateTime(2015, 03, 16, 13, 0, 0), HelpedId = HS5.Id, LengthSession = 2, TutorId = t5.Id };
+            TutoringSession TS2 = new TutoringSession() { DateTimeSession = new DateTime(2015, 03, 24, 10, 0, 0), HelpedId = HS5.Id, LengthSession = 1, TutorId = t1.Id };
+            TutoringSession TS3 = new TutoringSession() { DateTimeSession = new DateTime(2015, 03, 25, 13, 0, 0), HelpedId = HS2.Id, LengthSession = 1, TutorId = t4.Id };
+            TutoringSession TS4 = new TutoringSession() { DateTimeSession = new DateTime(2015, 04, 01, 12, 0, 0), HelpedId = HS1.Id, LengthSession = 2, TutorId = t5.Id };
+            TutoringSession TS5 = new TutoringSession() { DateTimeSession = new DateTime(2015, 04, 01, 13, 0, 0), HelpedId = HS2.Id, LengthSession = 1, TutorId = t3.Id };
+            TutoringSession TS6 = new TutoringSession() { DateTimeSession = new DateTime(2015, 04, 06, 16, 0, 0), HelpedId = HS1.Id, LengthSession = 1, TutorId = t4.Id };
+            TutoringSession TS7 = new TutoringSession() { DateTimeSession = new DateTime(2015, 04, 08, 10, 0, 0), HelpedId = HS6.Id, LengthSession = 1, TutorId = t4.Id };
+            TutoringSession TS8 = new TutoringSession() { DateTimeSession = new DateTime(2015, 04, 10, 10, 0, 0), HelpedId = HS1.Id, LengthSession = 2, TutorId = t4.Id };
+            TutoringSession TS9 = new TutoringSession() { DateTimeSession = new DateTime(2015, 04, 29, 12, 0, 0), HelpedId = HS9.Id, LengthSession = 1, TutorId = t5.Id };
+            TutoringSession TS10 = new TutoringSession() { DateTimeSession = new DateTime(2015, 05, 25, 13, 0, 0), HelpedId = HS10.Id, LengthSession = 1, TutorId = t7.Id };
+            TutoringSession TS11 = new TutoringSession() { DateTimeSession = new DateTime(2015, 05, 27, 12, 0, 0), HelpedId = HS10.Id, LengthSession = 2, TutorId = t5.Id };
+            TutoringSession TS12 = new TutoringSession() { DateTimeSession = new DateTime(2015, 05, 27, 13, 0, 0), HelpedId = HS2.Id, LengthSession = 1, TutorId = t3.Id };
+            TutoringSession TS13 = new TutoringSession() { DateTimeSession = new DateTime(2015, 06, 01, 09, 0, 0), HelpedId = HS7.Id, LengthSession = 1, TutorId = t7.Id };
+            TutoringSession TS14 = new TutoringSession() { DateTimeSession = new DateTime(2015, 06, 02, 09, 0, 0), HelpedId = HS11.Id, LengthSession = 1, TutorId = t7.Id };
+            TutoringSession TS15 = new TutoringSession() { DateTimeSession = new DateTime(2015, 06, 02, 11, 0, 0), HelpedId = HS2.Id, LengthSession = 1, TutorId = t7.Id };
+            TutoringSession TS16 = new TutoringSession() { DateTimeSession = new DateTime(2015, 06, 02, 13, 0, 0), HelpedId = HS5.Id, LengthSession = 1, TutorId = t1.Id };
+            TutoringSession TS17 = new TutoringSession() { DateTimeSession = new DateTime(2015, 06, 02, 15, 0, 0), HelpedId = HS9.Id, LengthSession = 1, TutorId = t4.Id };
+            TutoringSession TS18 = new TutoringSession() { DateTimeSession = new DateTime(2015, 06, 03, 13, 0, 0), HelpedId = HS7.Id, LengthSession = 2, TutorId = t3.Id };
+
+            _tutoringSessionRepository.Add(TS1);
+            _tutoringSessionRepository.Add(TS2);
+            _tutoringSessionRepository.Add(TS3);
+            _tutoringSessionRepository.Add(TS4);
+            _tutoringSessionRepository.Add(TS5);
+            _tutoringSessionRepository.Add(TS6);
+            _tutoringSessionRepository.Add(TS7);
+            _tutoringSessionRepository.Add(TS8);
+            _tutoringSessionRepository.Add(TS9);
+            _tutoringSessionRepository.Add(TS10);
+            _tutoringSessionRepository.Add(TS11);
+            _tutoringSessionRepository.Add(TS12);
+            _tutoringSessionRepository.Add(TS13);
+            _tutoringSessionRepository.Add(TS14);
+            _tutoringSessionRepository.Add(TS15);
+            _tutoringSessionRepository.Add(TS16);
+            _tutoringSessionRepository.Add(TS17);
+            _tutoringSessionRepository.Add(TS18);
         }
     }
 }
