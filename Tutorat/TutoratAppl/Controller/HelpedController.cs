@@ -3,6 +3,7 @@ using System.Linq;
 using DataLayer;
 using DataLayer.Model;
 using TutoratAppl.ViewModel;
+using TutoratAppl.View;
 
 namespace TutoratAppl.Controller
 {

@@ -18,7 +18,10 @@ namespace TutoratAppl.View
 
         public void Display()
         {
-
+            foreach (var s in _sessionList)
+            {
+                s.ToString();
+            }
         }
     }
 }
