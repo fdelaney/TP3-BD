@@ -1,6 +1,10 @@
 ﻿using DataLayer;
 using DataLayer.Model;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using TutoratAppl.View;
+using TutoratAppl.ViewModel;
 
 namespace TutoratAppl.Controller
 {
@@ -15,7 +19,22 @@ namespace TutoratAppl.Controller
 
         public void ListAll()
         {
+            var tutors = _tutorRepo.GetAll().ToList<Tutor>();
 
+            var tutorVM = new List<TutorListVM>();
+
+            foreach (Tutor t in tutors)
+            {
+                tutorVM.Add(new TutorListVM()
+                {
+                    EmailAddress = t.EmailAddress,
+                    FirstName = t.FirstName,
+                    Id = t.Id,
+                    LastName = t.LastName
+                });
+            }
+
+            new TutorListView(tutorVM).Display();
         }
 
         public void ListAllWithWorkingHoursTotal()

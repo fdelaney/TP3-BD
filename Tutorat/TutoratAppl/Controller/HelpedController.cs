@@ -21,12 +21,14 @@ namespace TutoratAppl.Controller
 
             var helpedVM = new List<HelpedListVM>();
 
-            foreach (HelpedStudent s in helped)
+            foreach (HelpedStudent h in helped)
             {
                 helpedVM.Add(new HelpedListVM()
                 {
-                    
-
+                    EmailAddress = h.EmailAdress,
+                    FirstName = h.FirstName,
+                    Id = h.Id,
+                    LastName = h.LastName
                 });
             }
 
