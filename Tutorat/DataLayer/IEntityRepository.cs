@@ -7,12 +7,13 @@ namespace DataLayer
     {
         IQueryable<T> GetAll();
 
-        T GetByID(int id);
+        T SingleId(int id);
 
         void Delete(T entity);
 
         void Add(T entity);
 
         void Update(T entity);
+        void DeleteAll();
     }
 }

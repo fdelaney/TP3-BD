@@ -18,9 +18,9 @@ namespace DataLayer.EfEntityFramework
             return _context.Set<T>().AsQueryable();
         }
 
-        public T GetByID(int id)
+        public T SingleId(int id)
         {
-            throw new System.NotImplementedException();
+            return _context.Set<T>().SingleOrDefault(t => t.Id == id);
         }
 
        public  void Delete(T entity)
@@ -37,7 +37,15 @@ namespace DataLayer.EfEntityFramework
 
         public void Update(T entity)
         {
-           
+            _context.Set<T>().Attach(entity);
+            _context.Entry(entity).State = System.Data.Entity.EntityState.Modified;
+            _context.SaveChanges(); 
+        }
+
+        public void DeleteAll()
+        {
+            _context.Set<T>().RemoveRange(_context.Set<T>());
+            _context.SaveChanges();
         }
     }
 }
