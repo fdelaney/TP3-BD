@@ -17,10 +17,12 @@ namespace TutoratAppl
           _dbHelper.SeedTable();
 
           var tutorController = new TutorController(new EfEntityRepository<Tutor>());
-          tutorController.ListAll();
+          
+            //3e
+          var helpController = new HelpedController(new EfEntityRepository<HelpedStudent>());
+          helpController.ListAllWhenWithoutTutoringSession();
 
           Console.ReadKey();
-
         }
     }
 }
