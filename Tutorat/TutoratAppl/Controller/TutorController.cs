@@ -15,14 +15,17 @@ namespace TutoratAppl.Controller
 
         public void ListAll()
         {
+
         }
 
         public void ListAllWithWorkingHoursTotal()
         {
+
         }
 
         public void ListWhenNextTutoringSession()
         {
+
         }
 
         public void ListWhenWithoutTutoringSession(DateTime sessionDate)
