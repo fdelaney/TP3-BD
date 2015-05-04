@@ -39,7 +39,6 @@ namespace TutoratAppl.Controller
 
         public void ListAllWithWorkingHoursTotal()
         {
-            
             var tutors = _tutorRepo.GetAll().ToList<Tutor>();
 
             var tutorVM = new List<TutorWithLengthSessionListVM>();
@@ -54,7 +53,7 @@ namespace TutoratAppl.Controller
 
                 tutorVM.Add(new TutorWithLengthSessionListVM()
                 {
-                    EmailAddress =  t.EmailAddress,
+                    EmailAddress = t.EmailAddress,
                     FirstName = t.FirstName,
                     LastName = t.LastName,
                     NbHeuresTotal = nbHeuresTotal
@@ -66,12 +65,37 @@ namespace TutoratAppl.Controller
 
         public void ListWhenNextTutoringSession()
         {
-
         }
 
         public void ListWhenWithoutTutoringSession(DateTime sessionDate)
         {
+            var tutors = _tutorRepo.GetAll().ToList<Tutor>();
 
+            var tutorVM = new List<TutorListVM>();
+
+            foreach (Tutor t in tutors)
+            {
+                bool hasSessionOnDate = false;
+                foreach (var s in t.Sessions)
+                {
+                    if (s.DateTimeSession.Date == sessionDate.Date)
+                    {
+                        hasSessionOnDate = true;
+                    }
+                }
+                if (!hasSessionOnDate)
+                {
+                   tutorVM.Add(new TutorListVM()
+                    {
+                        EmailAddress = t.EmailAddress,
+                        FirstName = t.FirstName,
+                        Id = t.Id,
+                        LastName = t.LastName
+                    }); 
+                }
+            }
+
+            new TutorListView(tutorVM).Display();
         }
     }
 }
