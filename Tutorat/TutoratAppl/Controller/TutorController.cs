@@ -39,12 +39,10 @@ namespace TutoratAppl.Controller
 
         public void ListAllWithWorkingHoursTotal()
         {
-
         }
 
         public void ListWhenNextTutoringSession()
         {
-
         }
 
         public void ListWhenWithoutTutoringSession(DateTime sessionDate)

@@ -3,7 +3,7 @@ using System.Data.Entity;
 
 namespace DataLayer
 {
-    internal class TutoringDbContext : DbContext
+    public class TutoringDbContext : DbContext
     {
         public DbSet<Tutor> Tutors { get; set; }
 
