@@ -11,9 +11,6 @@ namespace DataLayer.EfEntityFramework
 
         public void seedTable()
         {
-            //fillTutor();
-            //fillHelpedStudent();
-            //fillTutoringSession();
 
             Tutor T1 = new Tutor() {EmailAddress = "bgary2@hotmail.com", LastName = "Bilodeau", FirstName = "Gary"};
             Tutor T2 = new Tutor() { EmailAddress = "bgary2@hotmail.com", LastName = "Gagnon", FirstName = "Samuel" };
@@ -75,19 +72,6 @@ namespace DataLayer.EfEntityFramework
             TutoringSession TS16 = new TutoringSession() { DateTimeSession = new DateTime(2015, 03, 16, 13, 0, 0), HelpedId = HS5.Id, LengthSession = 2, TutorId = T5.Id };
             TutoringSession TS17 = new TutoringSession() { DateTimeSession = new DateTime(2015, 03, 16, 13, 0, 0), HelpedId = HS5.Id, LengthSession = 2, TutorId = T5.Id };
             TutoringSession TS18 = new TutoringSession() { DateTimeSession = new DateTime(2015, 03, 16, 13, 0, 0), HelpedId = HS5.Id, LengthSession = 2, TutorId = T5.Id };
-        }
-        private void fillTutor()
-        {
-            _tutorRepository.Add(new Tutor());
-        }
-        private void fillHelpedStudent()
-        {
-            _helpedStudentRepository.Add(new HelpedStudent());
-        }
-
-        private void fillTutoringSession()
-        {
-            _tutoringSessionRepository.Add(new TutoringSession());
         }
     }
 }
