@@ -8,11 +8,13 @@ using DataLayer.Model;
 
 namespace TutoratAppl.Controller
 {
-    class TutorController
+    public class TutorController
     {
-        private TutorController(IEntityRepository<Tutor> _repository)
-        {
+        private readonly IEntityRepository<Tutor> _tutorRepo;
 
+        public TutorController(IEntityRepository<Tutor> _repository)
+        {
+            _tutorRepo = _repository;
         }
     }
 }

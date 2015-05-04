@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace TutoratAppl.ViewModel
 {
-    class TutorListVM
+    public class TutorListVM
     {
+
     }
 }
