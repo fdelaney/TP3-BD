@@ -14,7 +14,7 @@ namespace TutoratAppl.ViewModel
         public string EmailAddress { get; set; }
         public string ToString()
         {
-            return FirstName + " " + LastName;
+            return "Aidé : " + LastName + ", " + FirstName + ", " + EmailAddress;
         }
     }
 }
