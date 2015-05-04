@@ -20,7 +20,7 @@ namespace TutoratAppl.View
         {
             foreach (var s in _sessionList)
             {
-                s.ToString();
+                Console.WriteLine(s.ToString());
             }
         }
     }
