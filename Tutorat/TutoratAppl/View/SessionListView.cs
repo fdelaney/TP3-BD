@@ -7,13 +7,13 @@ using TutoratAppl.ViewModel;
 
 namespace TutoratAppl.View
 {
-    public class TutorListView
+    public class SessionListView
     {
-        private readonly IEnumerable<TutorListVM> _tutorList;
+        private readonly IEnumerable<SessionListVM> _sessionList;
 
-        public TutorListView(IEnumerable<TutorListVM> tutorList)
+        public SessionListView(IEnumerable<SessionListVM> sessionList)
         {
-            _tutorList = tutorList;
+            _sessionList = sessionList;
         }
 
         public void Display()

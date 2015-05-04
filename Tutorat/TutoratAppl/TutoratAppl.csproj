@@ -56,7 +56,8 @@
     <Compile Include="ViewModel\SessionListVM.cs" />
     <Compile Include="ViewModel\TutorListVM.cs" />
     <Compile Include="ViewModel\HelpedListVM.cs" />
-    <Compile Include="View\SessionScheduleByTutorView.cs" />
+    <Compile Include="View\HelpedListView.cs" />
+    <Compile Include="View\SessionListView.cs" />
     <Compile Include="View\TutorListView.cs" />
   </ItemGroup>
   <ItemGroup>
