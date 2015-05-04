@@ -65,6 +65,45 @@ namespace TutoratAppl.Controller
 
         public void ListWhenNextTutoringSession()
         {
+            var tutors = _tutorRepo.GetAll().ToList<Tutor>();
+
+            var tutorVM = new List<TutorListVM>();
+
+            var sessionVM = new List<SessionListVM>();
+
+            foreach (var t in tutors)
+            {
+                tutorVM = new List<TutorListVM>();
+                sessionVM = new List<SessionListVM>();
+
+                tutorVM.Add(new TutorListVM()
+                {
+                    FirstName = t.FirstName,
+                    LastName = t.LastName
+                });
+
+
+                foreach (var s in t.Sessions)
+                {
+                    if (s.DateTimeSession > DateTime.Now)
+                    {
+                        sessionVM.Add(new SessionListVM()
+                        {
+                         HelpedFirstName  = s.Helped.FirstName,
+                         DateTimeSession = s.DateTimeSession,
+                         HelpedLastName = s.Helped.LastName,
+                         LenghtSession = s.LengthSession
+                        });
+                    }
+
+                }
+
+                if (sessionVM.Count != 0)
+                {
+                    new TutorListView(tutorVM).Display();
+                    new SessionListView(sessionVM).Display();
+                }
+            }
         }
 
         public void ListWhenWithoutTutoringSession(DateTime sessionDate)

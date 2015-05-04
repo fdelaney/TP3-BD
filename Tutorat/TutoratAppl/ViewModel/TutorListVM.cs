@@ -15,12 +15,12 @@ namespace TutoratAppl.ViewModel
 
         public string NameAndEMailToString()
         {
-            return NameToString() + " " + EmailAddress;
+            return NameToString() + ", " + EmailAddress;
         }
 
         public string NameToString()
         {
-            return LastName + " " + FirstName;
+            return LastName + ", " + FirstName;
         }
     }
 }
