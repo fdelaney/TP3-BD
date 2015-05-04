@@ -8,7 +8,7 @@ namespace DataLayer.Model
         public int TutorId { get; set; }
         public DateTime DateTimeSession { get; set; }
         public int LengthSession { get; set; }
-        public HelpedStudent Helped { get; set; }
-        public Tutor Tutor { get; set; }
+        public virtual HelpedStudent Helped { get; set; }
+        public virtual Tutor Tutor { get; set; }
     }
 }

@@ -10,7 +10,7 @@ namespace DataLayer.EfEntityFramework
         private EfEntityRepository<HelpedStudent> _helpedStudentRepository;
 
 
-        private EfDataBaseHelper()
+        public EfDataBaseHelper()
         {
             _tutorRepository = new EfEntityRepository<Tutor>();
             _tutoringSessionRepository = new EfEntityRepository<TutoringSession>();

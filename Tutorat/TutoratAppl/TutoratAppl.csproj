@@ -48,7 +48,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controller\HelpedStudentController.cs" />
+    <Compile Include="Controller\HelpedController.cs" />
+    <Compile Include="Controller\SessionController.cs" />
     <Compile Include="Controller\TutorController.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
