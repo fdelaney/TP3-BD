@@ -14,7 +14,7 @@ namespace TutoratAppl
         static void Main(string[] args)
         {
            EfDataBaseHelper _dbHelper = new EfDataBaseHelper();
-           _dbHelper.seedTable();
+           _dbHelper.SeedTable();
 
            var tutorController = new TutorController(new EfEntityRepository<Tutor>());
             
