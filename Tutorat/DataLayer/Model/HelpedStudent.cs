@@ -1,4 +1,6 @@
-﻿namespace DataLayer.Model
+﻿using System.Collections.Generic;
+
+namespace DataLayer.Model
 {
     public class HelpedStudent : Entity
     {
@@ -7,5 +9,7 @@
         public string FirstName { get; set; }
 
         public string EmailAdress { get; set; }
+
+        public ICollection<TutoringSession> Sessions { get; set; }
     }
 }
