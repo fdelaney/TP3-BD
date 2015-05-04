@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Collections.Specialized;
 using TutoratAppl.ViewModel;
 namespace TutoratAppl.View
 {
@@ -13,7 +15,10 @@ namespace TutoratAppl.View
 
         public void Display()
         {
-
+            foreach (var h in _helpedList)
+            {
+               Console.WriteLine(h.ToString());
+            }
         }
     }
 }
