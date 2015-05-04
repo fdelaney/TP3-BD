@@ -56,9 +56,11 @@
     <Compile Include="ViewModel\SessionListVM.cs" />
     <Compile Include="ViewModel\TutorListVM.cs" />
     <Compile Include="ViewModel\HelpedListVM.cs" />
+    <Compile Include="ViewModel\TutorWithLengthSessionListVM.cs" />
     <Compile Include="View\HelpedListView.cs" />
     <Compile Include="View\SessionListView.cs" />
     <Compile Include="View\TutorListView.cs" />
+    <Compile Include="View\TutorWithLenghtSessionListView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -3,16 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DataLayer.Model;
 using TutoratAppl.ViewModel;
 
 namespace TutoratAppl.View
 {
-    public class TutorListView
+    class TutorWithLenghtSessionListView
     {
-        private readonly IEnumerable<TutorListVM> _tutorList;
+        private readonly IEnumerable<TutorWithLengthSessionListVM> _tutorList;
 
-        public TutorListView(IEnumerable<TutorListVM> tutorList)
+        public TutorWithLenghtSessionListView(IEnumerable<TutorWithLengthSessionListVM> tutorList)
         {
             _tutorList = tutorList;
         }
@@ -21,7 +20,7 @@ namespace TutoratAppl.View
         {
             foreach ( var t  in _tutorList)
             {
-                Console.WriteLine(t.NameAndEMailToString());
+                Console.WriteLine(t.ToString());
             }
         }
     }
