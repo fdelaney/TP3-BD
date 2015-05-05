@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.Specialized;
 using TutoratAppl.ViewModel;
+
 namespace TutoratAppl.View
 {
     public class HelpedListView
@@ -17,7 +17,7 @@ namespace TutoratAppl.View
         {
             foreach (var h in _helpedList)
             {
-               Console.WriteLine(h.ToString());
+                Console.WriteLine(h.ToString());
             }
         }
     }

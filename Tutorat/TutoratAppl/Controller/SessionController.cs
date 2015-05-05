@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using DataLayer;
+﻿using DataLayer;
 using DataLayer.Model;
-using TutoratAppl.ViewModel;
+using System.Collections.Generic;
+using System.Linq;
 using TutoratAppl.View;
+using TutoratAppl.ViewModel;
 
 namespace TutoratAppl.Controller
 {
@@ -33,7 +33,6 @@ namespace TutoratAppl.Controller
                     LenghtSession = s.LengthSession,
                     TutorFirstName = s.Tutor.FirstName,
                     TutorLastName = s.Tutor.LastName
-
                 });
             }
 

@@ -23,10 +23,10 @@ namespace DataLayer.EfEntityFramework
             return _context.Set<T>().SingleOrDefault(t => t.Id == id);
         }
 
-       public  void Delete(T entity)
+        public void Delete(T entity)
         {
-           _context.Entry<T>(entity).State = System.Data.Entity.EntityState.Deleted;
-           _context.SaveChanges();
+            _context.Entry<T>(entity).State = System.Data.Entity.EntityState.Deleted;
+            _context.SaveChanges();
         }
 
         public void Add(T entity)
@@ -39,7 +39,7 @@ namespace DataLayer.EfEntityFramework
         {
             _context.Set<T>().Attach(entity);
             _context.Entry(entity).State = System.Data.Entity.EntityState.Modified;
-            _context.SaveChanges(); 
+            _context.SaveChanges();
         }
 
         public void DeleteAll()

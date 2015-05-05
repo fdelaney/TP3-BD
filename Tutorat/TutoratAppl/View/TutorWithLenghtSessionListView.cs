@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TutoratAppl.ViewModel;
 
 namespace TutoratAppl.View
 {
-    class TutorWithLenghtSessionListView
+    internal class TutorWithLenghtSessionListView
     {
         private readonly IEnumerable<TutorWithLengthSessionListVM> _tutorList;
 
@@ -18,7 +15,7 @@ namespace TutoratAppl.View
 
         public void Display()
         {
-            foreach ( var t  in _tutorList)
+            foreach (var t in _tutorList)
             {
                 Console.WriteLine(t.ToString());
             }

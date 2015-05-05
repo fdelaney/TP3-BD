@@ -45,14 +45,14 @@ namespace TutoratAppl.Controller
 
             foreach (HelpedStudent h in helped)
             {
-                if(h.Sessions.Count == 0)
+                if (h.Sessions.Count == 0)
                 {
-                helpedVM.Add(new HelpedListVM()
-                {
-                    EmailAddress = h.EmailAdress,
-                    FirstName = h.FirstName,
-                    LastName = h.LastName
-                });
+                    helpedVM.Add(new HelpedListVM()
+                    {
+                        EmailAddress = h.EmailAdress,
+                        FirstName = h.FirstName,
+                        LastName = h.LastName
+                    });
                 }
             }
 

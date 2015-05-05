@@ -82,25 +82,24 @@ namespace TutoratAppl.Controller
                     LastName = t.LastName
                 });
 
-
                 foreach (var s in t.Sessions)
                 {
                     if (s.DateTimeSession > DateTime.Now)
                     {
                         sessionVM.Add(new SessionListVM()
                         {
-                         HelpedFirstName  = s.Helped.FirstName,
-                         DateTimeSession = s.DateTimeSession,
-                         HelpedLastName = s.Helped.LastName,
-                         LenghtSession = s.LengthSession
+                            HelpedFirstName = s.Helped.FirstName,
+                            DateTimeSession = s.DateTimeSession,
+                            HelpedLastName = s.Helped.LastName,
+                            LenghtSession = s.LengthSession
                         });
                     }
-
                 }
+
+                new TutorListView(tutorVM).Display();
 
                 if (sessionVM.Count != 0)
                 {
-                    new TutorListView(tutorVM).Display();
                     new SessionListView(sessionVM).Display();
                 }
             }
@@ -124,13 +123,13 @@ namespace TutoratAppl.Controller
                 }
                 if (!hasSessionOnDate)
                 {
-                   tutorVM.Add(new TutorListVM()
-                    {
-                        EmailAddress = t.EmailAddress,
-                        FirstName = t.FirstName,
-                        Id = t.Id,
-                        LastName = t.LastName
-                    }); 
+                    tutorVM.Add(new TutorListVM()
+                     {
+                         EmailAddress = t.EmailAddress,
+                         FirstName = t.FirstName,
+                         Id = t.Id,
+                         LastName = t.LastName
+                     });
                 }
             }
 

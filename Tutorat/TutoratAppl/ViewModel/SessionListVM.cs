@@ -20,7 +20,7 @@ namespace TutoratAppl.ViewModel
 
         public string ToString()
         {
-            return DateTimeSession.ToString()+ ", " + LenghtSession + " heure(s), " + HelpedLastName + " " + HelpedFirstName;
+            return DateTimeSession.ToString() + ", " + LenghtSession + " heure(s), " + HelpedLastName + " " + HelpedFirstName;
         }
     }
 }

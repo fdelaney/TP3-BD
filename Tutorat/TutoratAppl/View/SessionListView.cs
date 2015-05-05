@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TutoratAppl.ViewModel;
 
 namespace TutoratAppl.View
@@ -20,7 +17,7 @@ namespace TutoratAppl.View
         {
             foreach (var s in _sessionList)
             {
-                Console.WriteLine(s.ToString());
+                Console.WriteLine("     " + s.ToString());
             }
         }
     }

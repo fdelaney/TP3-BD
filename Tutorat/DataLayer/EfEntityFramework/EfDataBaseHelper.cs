@@ -1,5 +1,5 @@
-﻿using System;
-using DataLayer.Model;
+﻿using DataLayer.Model;
+using System;
 
 namespace DataLayer.EfEntityFramework
 {
@@ -9,13 +9,11 @@ namespace DataLayer.EfEntityFramework
         private EfEntityRepository<TutoringSession> _tutoringSessionRepository;
         private EfEntityRepository<HelpedStudent> _helpedStudentRepository;
 
-
         public EfDataBaseHelper()
         {
             _tutorRepository = new EfEntityRepository<Tutor>();
             _tutoringSessionRepository = new EfEntityRepository<TutoringSession>();
             _helpedStudentRepository = new EfEntityRepository<HelpedStudent>();
-              
         }
 
         public void SeedTable()
@@ -24,8 +22,7 @@ namespace DataLayer.EfEntityFramework
             _tutorRepository.DeleteAll();
             _helpedStudentRepository.DeleteAll();
 
-
-            Tutor t1 = new Tutor() {EmailAddress = "bgary2@hotmail.com", LastName = "Bilodeau", FirstName = "Gary"};
+            Tutor t1 = new Tutor() { EmailAddress = "bgary2@hotmail.com", LastName = "Bilodeau", FirstName = "Gary" };
             Tutor t2 = new Tutor() { EmailAddress = "samPP92@hotmail.com", LastName = "Gagnon", FirstName = "Samuel" };
             Tutor t3 = new Tutor() { EmailAddress = "ptitguy22@bell.net", LastName = "Gingras", FirstName = "Simon" };
             Tutor t4 = new Tutor() { EmailAddress = "eroy231@videotron.ca", LastName = "Roy", FirstName = "Éric" };
@@ -41,7 +38,7 @@ namespace DataLayer.EfEntityFramework
             _tutorRepository.Add(t6);
             _tutorRepository.Add(t7);
 
-            HelpedStudent HS1 = new HelpedStudent() { EmailAdress = "marco.arso@hotmail.com" ,FirstName = "Marc", LastName = "Arsenault"};
+            HelpedStudent HS1 = new HelpedStudent() { EmailAdress = "marco.arso@hotmail.com", FirstName = "Marc", LastName = "Arsenault" };
             HelpedStudent HS2 = new HelpedStudent() { EmailAdress = "eric.r.boilard@coop.com", FirstName = "Éric", LastName = "Boilard" };
             HelpedStudent HS3 = new HelpedStudent() { EmailAdress = "jc.couture.wilde@hotmail.com", FirstName = "Jean-Cristophe", LastName = "Couture" };
             HelpedStudent HS4 = new HelpedStudent() { EmailAdress = "galypo13@hotmail.com", FirstName = "Julianne", LastName = "Desrosiers" };
@@ -64,8 +61,6 @@ namespace DataLayer.EfEntityFramework
             _helpedStudentRepository.Add(HS9);
             _helpedStudentRepository.Add(HS10);
             _helpedStudentRepository.Add(HS11);
-
-
 
             TutoringSession TS1 = new TutoringSession() { DateTimeSession = new DateTime(2015, 03, 16, 13, 0, 0), HelpedId = HS5.Id, LengthSession = 2, TutorId = t5.Id };
             TutoringSession TS2 = new TutoringSession() { DateTimeSession = new DateTime(2015, 03, 24, 10, 0, 0), HelpedId = HS5.Id, LengthSession = 1, TutorId = t1.Id };
