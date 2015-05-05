@@ -73,8 +73,8 @@ namespace TutoratAppl.Controller
 
             foreach (var t in tutors)
             {
-                tutorVM = new List<TutorListVM>();
-                sessionVM = new List<SessionListVM>();
+                tutorVM.Clear();
+                sessionVM.Clear();
 
                 tutorVM.Add(new TutorListVM()
                 {
