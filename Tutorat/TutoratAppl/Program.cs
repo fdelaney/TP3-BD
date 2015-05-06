@@ -13,6 +13,22 @@ namespace TutoratAppl
             _dbHelper.SeedTable();
 
             var tutorController = new TutorController(new EfEntityRepository<Tutor>());
+            var helpController = new HelpedController(new EfEntityRepository<HelpedStudent>());
+            var sessionController = new SessionController(new EfEntityRepository<TutoringSession>());
+
+            //List All
+            Console.WriteLine("Tous les Tuteurs:");
+            tutorController.ListAll();
+            Console.WriteLine("--------------------------------------------------------------------------");
+
+            Console.WriteLine("Tous les Etudiants Aidés:");
+            helpController.ListAll();
+            Console.WriteLine("--------------------------------------------------------------------------");
+
+            Console.WriteLine("Toutes les Sessions d'aide:");
+            sessionController.ListAll();
+            Console.WriteLine("--------------------------------------------------------------------------");
+
             //1ere
             Console.WriteLine("Requete #1: ");
             tutorController.ListAllWithWorkingHoursTotal();
@@ -25,7 +41,6 @@ namespace TutoratAppl
 
             //3e
             Console.WriteLine("Requete #3: ");
-            var helpController = new HelpedController(new EfEntityRepository<HelpedStudent>());
             helpController.ListAllWhenWithoutTutoringSession();
             Console.WriteLine("--------------------------------------------------------------------------");
 
