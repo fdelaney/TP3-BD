@@ -98,6 +98,7 @@ namespace TutoratAppl.Controller
 
                 if (sessionVM.Count != 0)
                 {
+                    sessionVM = sessionVM.OrderBy(o => o.DateTimeSession).ThenBy(o => o.LenghtSession).ThenBy(o => o.HelpedLastName).ThenBy(o => o.HelpedFirstName).ToList();
                     new TutorListView(tutorVM).Display();
                     new SessionListView(sessionVM).Display();
                 }
