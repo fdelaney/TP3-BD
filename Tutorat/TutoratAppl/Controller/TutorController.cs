@@ -96,10 +96,9 @@ namespace TutoratAppl.Controller
                     }
                 }
 
-                new TutorListView(tutorVM).Display();
-
                 if (sessionVM.Count != 0)
                 {
+                    new TutorListView(tutorVM).Display();
                     new SessionListView(sessionVM).Display();
                 }
             }
